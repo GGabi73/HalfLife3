@@ -2,21 +2,33 @@
 <html>
 <head>
 <title>Half Life 3</title>
-<link rel="stylesheet" href="dance.css">
+<link rel="stylesheet" href="css/dance.css">
 </head>
 <body>
-<a href="index"> <p>Back To Home</p> </a>
+
+<script>
+if (document.referrer !== "https://ggabi73.github.io/HalfLife3/quiz.html") {
+    window.location.href = "access-denied.html";
+}
+else {
+    document.getElementById('gordon').src = 'images/gordon_freeman.webp';
+}
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<a href="index.html"> <p>Back To Home</p> </a>
 
 <h1>MAKE GORDON FREEMAN <a href=https://en.wikipedia.org/wiki/Half-Life_(series)> (Half Life)</a> DANCE! </h1>
 
-<img src="gordon_freeman.webp" width="300" height="500" alt="Gordon Freeman" id="gordon">
+<img src="none" width="300" height="500" alt="Gordon Freeman" id="gordon">
 </img>
 
 <br>
 <br>
 <br>
 
-<button type="button" onclick="document.getElementById('gordon').src = 'gordon-freeman-half-life.gif'"> Click to make gordon DANCE</button>
+<button type="button" onclick="document.getElementById('gordon').src = 'images/gordon-freeman-half-life.gif'"> Click to make gordon DANCE</button>
 
 </body>
 </html> 
