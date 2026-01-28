@@ -1,0 +1,24 @@
+body {
+  background-color: lightsalmon;
+}
+h1 {
+  color: darkred;
+}
+p {
+  color: black;
+}
+@media screen and (max-width: 900px) and (pointer: coarse) {
+  body {
+    font-size: 24px; /* Standard is usually 16px */
+  }
+
+  img {
+    width: 100%;    /* Make images fill the screen width */
+    height: auto;
+  }
+
+  button {
+    padding: 20px;  /* Make buttons easier to tap */
+    font-size: 1.2rem;
+  }
+}
