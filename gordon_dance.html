@@ -17,11 +17,25 @@
 <br>
 <br>
 
-<button type="button" onclick="document.getElementById('gordon').src = 'images/gordon-freeman-half-life.gif'"> Click to make gordon DANCE</button>
+<button type="button" onclick="makeGordonDance()"> Click to make gordon DANCE</button>
 
-<button type="button" onclick="document.getElementById('gordon').src = 'images/gordon_freeman.webp'"> Click to make gordon STOP</button>
+<button type="button" onclick="stopGordonDance()"> Click to make gordon STOP</button>
 
 <script>
+const danceSound = new Audio('audio/guard_down.mp3');
+danceSound.loop = true; // This makes it loop forever
+
+function makeGordonDance() {
+    document.getElementById('gordon').src = 'images/gordon-freeman-half-life.gif'
+
+    danceSound.play();
+}
+function stopGordonDance() {
+    document.getElementById('gordon').src = 'images/gordon_freeman.webp'
+
+    danceSound.pause();
+}
+
 if (document.referrer !== "https://ggabi73.github.io/HalfLife3/quiz.html") {
     window.location.href = "access-denied.html";
 }
